@@ -11,11 +11,11 @@ chrome_options.add_argument('--headless')
 # Separate ChromeDriverManager() and chrome_options when passing to Service
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
-url = 'https://nvchad.com/'
+url = 'https://github.com/KrishT0'
 
 driver.get(url)
 time.sleep(5)
 
-driver.save_screenshot("./screenshots/insight_page.png")
+driver.save_screenshot("./screenshots/github.png")
 
 driver.quit()
