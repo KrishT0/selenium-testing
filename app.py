@@ -11,11 +11,12 @@ chrome_options.add_argument('--headless')
 # Separate ChromeDriverManager() and chrome_options when passing to Service
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
-url = 'https://fedoraproject.org/'
+url = 'https://dishatest.neophyte.ai/'
 
 driver.get(url)
-time.sleep(5)
-
-driver.save_screenshot("./screenshots/fedora.png")
+driver.maximize_window()
+time.sleep(10)
+driver.save_screenshot("./screenshots/insight_page.png")
+time.sleep(2)
 
 driver.quit()
