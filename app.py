@@ -22,7 +22,7 @@ time.sleep(10)
 phone_box = driver.find_element("xpath","/html/body/div[1]/div/div/div/div/div/div[2]/form/div[1]/input")
 
 # Simulate entering the phone number into the input field
-phone_number = "YourPhoneNumberHere"  # Replace with your phone number
+phone_number = "5039931677"
 print("Got the user login box, entering the phone number")
 phone_box.send_keys(phone_number)
 time.sleep(3)
