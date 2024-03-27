@@ -17,6 +17,7 @@ url = 'https://dishatest.neophyte.ai/'
 driver.get(url)
 driver.maximize_window()
 time.sleep(10)
+driver.execute_script("document.body.style.zoom='100%'")
 
 # Find the phone number input field by XPath
 phone_box = driver.find_element("xpath","/html/body/div[1]/div/div/div/div/div/div[2]/form/div[1]/input")
