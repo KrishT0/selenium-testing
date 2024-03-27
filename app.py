@@ -8,6 +8,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 chrome_options = Options()
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--headless')
+chrome_options.add_argument("window-size=1920,1080")
 
 # Initialize Chrome WebDriver with ChromeDriverManager
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
@@ -17,7 +18,6 @@ url = 'https://dishatest.neophyte.ai/'
 driver.get(url)
 driver.maximize_window()
 time.sleep(10)
-options.addArguments("window-size=1920,1080");
 
 # Find the phone number input field by XPath
 phone_box = driver.find_element("xpath","/html/body/div[1]/div/div/div/div/div/div[2]/form/div[1]/input")
