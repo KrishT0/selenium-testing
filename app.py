@@ -27,6 +27,7 @@ print("Got the user login box, entering the phone number")
 phone_box.send_keys(phone_number)
 time.sleep(3)
 
+
 # Save a screenshot of the page
 driver.save_screenshot("./screenshots/insight_page.png")
 time.sleep(2)
