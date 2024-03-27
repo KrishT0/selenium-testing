@@ -70,7 +70,7 @@ print("Took the screenshot of the upkeep score graph")
 time.sleep(2)
 
 vm_score=driver.find_element("xpath","/html/body/div[1]/div/main/div[2]/div/div[2]/div/div[2]/div")
-m_score.screenshot("./screenshots/vm_score.png")
+vm_score.screenshot("./screenshots/vm_score.png")
 print("Took the screenshot of the VM score graph")
 time.sleep(2)
 
