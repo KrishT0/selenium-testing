@@ -64,7 +64,7 @@ print("Logged in successfully, taking the screenshot of the insight page")
 driver.save_screenshot("./screenshots/insight_page.png")
 time.sleep(2)
 
-upkeep_score_element=driver.find_element("xpath","/html/body/div[1]/div/main/div[2]/div/div[2]/div/div[1]/div")  
+upkeep_score_element=driver.find_element("xpath","/html/body/div[1]/div/main/div[2]/div/div[2]/div/div[1]/div")
 upkeep_score_element.screenshot("./screenshots/upkeep_score_element.png")
 print("Took the screenshot of the upkeep score graph")
 time.sleep(2)
